@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--reset all browsers style-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--add 2 font for this document-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--my style .css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Harry Potter Patronous Test</title>
+</head>
+<body>
+    <header>
+            <button id="resetBtn" class="btn btn-warning" onclick="restart()">restart</button>
+        <h1>DISCOVER YOUR PATRONOUS?</h1>
+       
+    </header>
+
+    <main>
+        <h2 id="warning">10 second time for per question</h2>
+        <div id="winText"></div>
+        <section class="container" id="gameContent">
+            
+                <form id="myform1">
+                        <h4>What's more important honesty or loyalty?</h4>
+                        <select id="mySelect1">
+                          <option value="1">Honesty is always going to be more important</option>
+                          <option value="2">loyalty is always going to be more important</option>
+                          <option value="3">Both go hand in hand</option>
+                          <option value="4">Neither matters most</option>
+                    </select>
+                </form>
+                <form id="myform2">
+                        <h4>do you believe Mean people will get what they deserve?</h4>
+                        <select id="mySelect2">
+                          <option value="1">Yes, I believe it</option>
+                          <option value="2">No I believe in karma.</option>
+                          <option value="3">maybe not sure</option>
+                          <option value="4">it happen so rarely</option>
+                    </select>
+                </form>
+                <form id="myform3">
+                        <h4>Do Sports are the best way to spend free time?</h4>
+                        <select id="mySelect3">
+                          <option value="1">Yes Sports are the best</option>
+                          <option value="2">definitely not</option>
+                          <option value="3">maybe not sure</option>
+                          <option value="4">sport and watch movie are same</option>
+                    </select>
+                </form>
+                <form id="myform4">
+                        <h4>Does Money more important than friendship?</h4>
+                        <select id="mySelect4">
+                          <option value="1">yes 100%</option>
+                          <option value="2">really preffer friendship</option>
+                          <option value="3">Both go hand in hand</option>
+                          <option value="4">Neither matters most</option>
+                    </select>
+                </form>
+                <form id="endform">
+                        <button id="Patronous" class="btn btn-success">what is your Patronous?</button>
+                </form>
+                
+
+        </section>
+    </main>
+
+    <script>
+        function myFunction() {
+        let x = document.getElementById("mySelect").value;
+            document.getElementById("winText").innerHTML = x;
+        }
+    </script>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
